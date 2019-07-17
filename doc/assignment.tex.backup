@@ -1,0 +1,50 @@
+\documentclass[10pt,english]{article}
+%\documentclass[10pt,italian]{article} % TO WRITE IN ITALIAN, UNCOMMENT THIS LINE AND COMMENT THE ABOVE ONE
+\usepackage[utf8]{inputenc} % opzione per caratteri ISO-8859-1, CONSENTE L'USO DELLE ACCENTATE
+\usepackage{hyperref}
+
+% MARGINI LARGHI
+\textwidth 6.3 in % Width of text line.
+    \textheight 9.2 in
+    \oddsidemargin 0 in      %   Left margin on odd-numbered pages.
+    \evensidemargin 0 in      %   Left margin on even-numbered pages.
+    \topmargin 0.2 in
+    \headheight 0 in       %   Width of marginal notes.
+    \headsep 0 in
+    \topskip 0 in
+    
+\title{\vspace{-70pt}Assignment 03 -- ``Prolog''}
+\author{Jacopo Riciputi, matr: 885773, email: {\url{jacopo.riciputi@studio.unibo.it}}\\ repo: {\url{https://github.com/Jacopo47/pps2017-asg03-prolog}}\footnote{You have to implement some nice code that involves Prolog (be excellent and rely on logic programming, also exercise a multi-paradigm approach if you can): it can be some solution to problems given in lab or some variation of it, it can be some new Prolog code, a mini-JVM-application demoing Java/Scala/Prolog, it can be a better Scala wrapper for tuProlog, or it can be everything else you want and like (just stay within 6-7 hours of work). Please name your project exactly \texttt{pps2017-asg03-prolog}, and perform meaningful commits. Be sure the repo is visible and do not modify it after submission.}}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+\vspace{-30pt}
+
+\subsection{Descrizione}
+
+Per portare a termine l'assignment ho optato per la crezione di un semplice gioco in stile \textbf{Akinator}. \\
+L'applicazione non fa altro che chiedera al giocatore di pensare a un insieme limitato di personaggi della serie tv Breaking Bad. \\
+Il gioco dopo aver dato qualche secondo all'utente per individuare il personaggio di riferimento si avvia in una serie di domande. 
+Ad ogni risposta ottenuta cerca all'interno dei propri predicati quelli che coincidono con le risposte date, fino ad arrivare al punto di selezionare l'unico personaggio che corrisponde al profilo esatto tracciato dalle risposte del giocatore.
+
+
+\subsection{Tecniche usate}}
+
+\begin{itemize}
+ \item Prolog search-space abilities
+ \item Prolog use of unification and variables
+ \item Java-tuProlog integration
+ \item Compared monads and LP
+ \item \ldots
+\end{itemize}
+
+\subsection*{Self-evaluation\footnote{Add a max 10 lines evaluation of this experience, reporting what you think about Prolog and LP, about what you have learned of it, and about this specific assignment: what went good, what bad, and so on.}}
+
+\ldots 
+ 
+\end{document}
+    
+    

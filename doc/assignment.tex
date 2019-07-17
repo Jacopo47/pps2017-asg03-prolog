@@ -1,0 +1,58 @@
+%\documentclass[10pt,english]{article}
+\documentclass[10pt,italian]{article} % TO WRITE IN ITALIAN, UNCOMMENT THIS LINE AND COMMENT THE ABOVE ONE
+\usepackage[utf8]{inputenc} % opzione per caratteri ISO-8859-1, CONSENTE L'USO DELLE ACCENTATE
+\usepackage{hyperref}
+
+% MARGINI LARGHI
+\textwidth 6.3 in % Width of text line.
+    \textheight 9.2 in
+    \oddsidemargin 0 in      %   Left margin on odd-numbered pages.
+    \evensidemargin 0 in      %   Left margin on even-numbered pages.
+    \topmargin 0.2 in
+    \headheight 0 in       %   Width of marginal notes.
+    \headsep 0 in
+    \topskip 0 in
+    
+\title{\vspace{-70pt}Assignment 03 -- ``Prolog''}
+\author{Jacopo Riciputi, matr: 885773, email: {\url{jacopo.riciputi@studio.unibo.it}}\\ repo: {\url{https://github.com/Jacopo47/pps2017-asg03-prolog}} }
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+\vspace{-30pt}
+
+\subsection{Descrizione}
+
+Per portare a termine l'assignment ho optato per la crezione di una serie di fatti per la gestione di un \textbf{BinaryTree} in Prolog. \\
+Tra i vari fatti sono state inserite varie operazioni utili come: la ricerca di un determinato valore, la somma dei valori, la creazione di un albero bilancio e altro.
+L'albero preso in esame dai predicati si compone di nessuno, uno o più nodi costruiti nel seguente formato: node(V, L, R). \\
+Per V viene inteso il valore del nodo mentre per L e R i nodi rispettivamente a sinistra e destra del nodo principale, essi possono assumere il valore 'null' nel caso in cui non siano effettivamente presenti.
+
+\subsection{Tecniche usate}
+Per completare l'assignment avevo la necessità di un ambiente che mi permettesse di gestire comodamente le interazioni con l'utente.
+Per questo motivo ho optato per Scala, grazie al quale è risultato semplice creare le parti di modello e di controllo. \\
+La scelta è stata guidata verso Scala anche per la possibilità di poter sfruttare il motore \textbf{tuProlog}, l'intera applicazione infatti si basa su di esso. \\
+
+L'utilizzo di Prolog si può riassumere in questi punti: 
+  \begin{itemize}
+   \item All'avvio del programma infatti vengono caricati i personaggi definiti staticamente all'interno di un motore tuProlog come \textit{Theory}.
+   \item A ogni risposta dell'utente l'applicazione rimanda al motore creato la ricerca dei personaggi che corrispondo al profilo delineato. 
+   \item Una volta ottenuti viene creato un iteratore che permette un attraversamento facilitato dei risultati. 
+  \end{itemize}
+
+
+
+\subsection{Autovalutazione}
+L'utilizzo di Prolog all'interno di un progetto Java/Scala è stata una bella scoperta, le librerie \textit{tuProlog} forniscono un'ottima integrazione e davvero intuitiva. \\
+Devo però ammettere che, probabilmente per colpa della poca esperienza, fatico a vedere il Prolog come possibile soluzione a richieste di miei eventuali progetti. 
+\\
+Anche se, come indicato precedentemente, la poca esperienza con uno stile di programmazione completamente nuovo e mai visto prima, mi porta verso questo pensiero. \\
+Nonostante abbia capito i suoi concetti basilari avrei la necessità di vederlo in un vero dominio applicativo, così da riuscire a capire le sue piene capacità. 
+
+
+ 
+\end{document}
+    
+    
